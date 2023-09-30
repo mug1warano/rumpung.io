@@ -1,0 +1,363 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fffaf2;
+}
+
+/*Reset css untuk mrnghapus margin dan padding bawaan dari browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Burger*/
+.burger div {
+    width: 22PX;
+    height: 2px;
+    background-color: #fffaf2;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 28px;
+    right: 35px;
+}
+
+/*bagian header */
+header {
+    background-color: #17181c;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #17181c;
+
+}
+
+.logo h2 {
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.logo a {
+    text-decoration: none;
+    margin-left: 50px;
+    color: #fffaf2;
+    font-size: 30px;
+
+}
+
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 17px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 6px;
+    margin-right: 40px;
+
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #fffaf2;
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+#hero {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*hero left*/
+.hero-left {
+    margin-top: -150px;
+    flex: 1;
+    text-align: top;
+    padding-left: 30px;
+
+}
+
+.hero-name {
+    font-size: 30px;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #007fff;
+    color: #fffaf2;
+    box-shadow: none;
+    border: none;
+
+
+}
+
+.hero-center {
+    text-align: center;
+    flex: 1;
+
+}
+
+
+
+.hero-right {
+    flex: 1;
+    text-align: left;
+    margin-top: -150px;
+    padding-right: 30px;
+
+}
+
+.hero-right h1 {
+    padding-bottom: 5px;
+    padding-top: 6px;
+}
+
+/*akhir bagian header */
+
+
+/*bagian service*/
+.service-main-container {
+
+    padding: 0;
+    text-align: center;
+    padding: 30px;
+}
+
+.service-main-container h3 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 20px;
+}
+
+.service-main-container h5 {
+    font-size: 10px;
+}
+
+.service-main-container p {
+    font-size: 12px;
+}
+
+#services {
+
+    background-color: #3b3f5f;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Gaya umum untuk .content1, .content2, .content3, dan .content4 */
+.service-content>div {
+    padding: 10px 10px 10px 8px;
+    box-sizing: border-box;
+    border: 1px solid #fffaf2;
+    width: 20%;
+    margin-bottom: 30px;
+
+}
+
+.service-content>div svg {
+    width: 20%;
+    stroke-width: 1px;
+
+}
+
+/* Khusus .content1 */
+.content1 {
+    margin-left: 50px;
+}
+
+/* Khusus .content4 */
+.content4 {
+    margin-right: 50px;
+}
+
+.service-content h4 {
+    font-size: 14px;
+    padding-top: 4px;
+}
+
+.service-content p {
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.content4 svg {
+    fill: #fffaf2;
+}
+
+/*end of service*/
+
+
+/*porfolio*/
+#portfolio {
+    background-color: #e2e2e2;
+    color: #17181c;
+
+}
+
+.portfolio-content {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.portfolio-content h5 {
+    font-size: 10px;
+}
+
+.portfolio-content h3 {
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.portfolio-content p {
+    font-size: 12px;
+}
+
+.portfolio-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+
+}
+
+.portfolio-image img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.port-image1 {
+
+    box-sizing: border-box;
+    padding-left: 50px;
+
+}
+
+.port-image4 {
+
+    box-sizing: border-box;
+    border: none;
+
+}
+
+/*end of porfolio*/
+
+/*contact*/
+#contact {
+    background-color: #3b3f5f;
+    padding-bottom: 40px;
+}
+
+.pretitle-contact {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contact-5 {
+    font-size: 10px;
+}
+
+.contact-3 {
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.pretitle-contact p {
+    font-size: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #e2e2e2;
+    width: 55%;
+    padding: 10px;
+    margin-left: 22.5%;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+
+}
+
+textarea {
+    padding: 40px;
+}
+
+/* Mengatur tampilan tombol "Send" */
+button[type="submit"] {
+    background-color: #007fff;
+    padding: 12px 140px;
+    margin-left: 22.5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-contact {
+
+    justify-content: center;
+}
+
+/*end of contact*/
+
+/*footer */
+/* footer section*/
+
+footer {
+    padding: 4rem 0 2rem;
+    background: #3b3f5f;
+    text-align: center;
+}
+
+.footer-icon {
+    margin-bottom: 1rem;
+}
+
+.footer-icon a {
+    margin: 0 .5rem;
+}
+
+.footer-icon svg {
+    fill: #e2e2e2;
+}
+
+.footer-icon a:hover svg {
+    fill: #17181c;
+}
